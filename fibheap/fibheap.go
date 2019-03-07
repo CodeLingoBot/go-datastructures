@@ -259,7 +259,7 @@ func (heap *FloatingFibonacciHeap) DecreaseKey(node *Entry, newPriority float64)
 	}
 
 	if newPriority >= node.Priority {
-		return nil, fmt.Errorf("The given new priority: %v, is larger than or equal to the old: %v",
+		return nil, fmt.Errorf("the given new priority: %v, is larger than or equal to the old: %v",
 			newPriority, node.Priority)
 	}
 
